@@ -1,4 +1,5 @@
 {
     "token": "user token",
-    "selectedGuilds": "any or array of guilds id"
+    "selectedGuilds": "any or array of guilds id",
+    "delay": "delay to send msg in Number (ms)"
 }
