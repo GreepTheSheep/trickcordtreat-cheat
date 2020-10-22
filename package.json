@@ -1,0 +1,22 @@
+{
+  "name": "trickcordtreat-cheat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreepTheSheep/trickcordtreat-cheat.git"
+  },
+  "author": "Greep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GreepTheSheep/trickcordtreat-cheat/issues"
+  },
+  "homepage": "https://github.com/GreepTheSheep/trickcordtreat-cheat#readme",
+  "dependencies": {
+    "discord.js": "^11.6.4"
+  }
+}
