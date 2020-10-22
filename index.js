@@ -5,12 +5,12 @@ const findInMessage = require('./embed-find.js')
 const wait = require('util').promisify(setTimeout);
 client.login(token)
 
-if (!delay) var delay = 600
+if (!delay) delay = 600
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}\nTrick'cord Treat, Let's fight!`)
     if (selectedGuilds == "any" || !selectedGuilds){
-        var selectedGuilds = []
+        selectedGuilds = []
         client.guilds.forEach(g=>{
             selectedGuilds.push(g.id)
         })
