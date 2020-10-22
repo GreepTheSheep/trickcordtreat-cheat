@@ -1,10 +1,10 @@
 function findInMessage(message, target){
 let params = {
-    author = false,
-    description = true,
-    footer = true,
-    title = true,
-    fields = true
+    author: false,
+    description: true,
+    footer: true,
+    title: true,
+    fields: true
   }
     if (!target || !message) return null;
     let str = target
