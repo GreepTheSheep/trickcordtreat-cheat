@@ -5,8 +5,6 @@ const findInMessage = require('./embed-find.js')
 const wait = require('util').promisify(setTimeout);
 client.login(token)
 
-if (!delay) delay = 600
-
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}\nTrick'cord Treat, Let's fight!`)
     if (selectedGuilds == "any" || !selectedGuilds){
@@ -22,12 +20,18 @@ client.on('message', async message => {
         if (selectedGuilds.includes(message.guild.id)){
             if (findInMessage(message, 'h!trick')){
                 console.log('h!trick found on server: ' + message.guild.name)
+                await wait(100)
+                message.channel.startTyping()
                 await wait(delay)
                 message.channel.send('h!trick')
+                .then(m=>message.channel.stopTyping(true))
             } else if (findInMessage(message, 'h!treat')){
                 console.log('h!treat found in server: ' + message.guild.name)
+                await wait(100)
+                message.channel.startTyping()
                 await wait(delay)
                 message.channel.send('h!treat')
+                .then(m=>message.channel.stopTyping(true))
             }
         }  
     }
