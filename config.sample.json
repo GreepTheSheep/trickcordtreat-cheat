@@ -1,3 +1,4 @@
 {
-    "token": "user token"
+    "token": "user token",
+    "selectedGuilds": "any or array of guilds id"
 }
