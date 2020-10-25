@@ -20,7 +20,7 @@ client.on('message', async message => {
         if (selectedGuilds.includes(message.guild.id)){
             if (findInMessage(message, 'h!trick')){
                 console.log('h!trick found on server: ' + message.guild.name)
-                await wait(100)
+                await wait(1000)
                 message.channel.startTyping()
                 await wait(delay)
                 message.channel.send('h!trick')
